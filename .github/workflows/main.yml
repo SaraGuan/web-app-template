@@ -4,6 +4,9 @@ jobs:
   myjob:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        run: actions/checkout@v2
+    
       - name: step1
         run: curl https://www.digitalocean.com/robots.txt --output robots.txt
   
